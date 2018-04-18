@@ -5,6 +5,57 @@
 	  <title>500 Internal Error</title>
 	  <style>
 	  		@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+	  		/* http://meyerweb.com/eric/tools/css/reset/ 
+			   v2.0 | 20110126
+			   License: none (public domain)
+			*/
+
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+
+			/* 500 error page css style */
 			* {
 				margin:0;
 				padding:0;
@@ -80,30 +131,35 @@
 			  	margin: 0 0 -4px 0;
 			  	z-index: 2000;
 			}
-			.square-a {
-				
-			}
 			.square-a:hover ~ svg {
-			    transform: translate(-10px, -10px);
+			    -webkit-transform: translate(-10px, -10px);
+			        -ms-transform: translate(-10px, -10px);
+			            transform: translate(-10px, -10px);
 			}
 			.square-b {
 				float: right;
 			}
 			.square-b:hover ~ svg {
-			    transform: translate(10px, -10px);
+			    -webkit-transform: translate(10px, -10px);
+			        -ms-transform: translate(10px, -10px);
+			            transform: translate(10px, -10px);
 			}
 			.square-c {
 
 			}
 			.square-c:hover ~ svg {
-			    transform: translate(-10px, 10px);
+			    -webkit-transform: translate(-10px, 10px);
+			        -ms-transform: translate(-10px, 10px);
+			            transform: translate(-10px, 10px);
 			}
 			.square-d {
 				float: right;
 
 			}
 			.square-d:hover ~ svg {
-			    transform: translate(10px, 10px);
+			    -webkit-transform: translate(10px, 10px);
+			        -ms-transform: translate(10px, 10px);
+			            transform: translate(10px, 10px);
 			}
 			svg {
 				position: absolute;
@@ -119,6 +175,8 @@
 				height: 5%;
 				top: 54%;
 				left: 22.5%;
+				-webkit-transition: 500ms ease-in-out;
+				-o-transition: 500ms ease-in-out;
 				transition: 500ms ease-in-out;
 			}
 			.svg-cross-2 {
@@ -126,6 +184,8 @@
 				height: 3%;
 				top: 57%;
 				right: 22.5%;
+				-webkit-transition: 1s ease-in-out;
+				-o-transition: 1s ease-in-out;
 				transition: 1s ease-in-out;
 			}
 			.svg-cross-3 {
@@ -133,6 +193,8 @@
 				height: 4%;
 				top: 72.5%;
 				left: 20%;
+				-webkit-transition: 1.5s ease-in-out;
+				-o-transition: 1.5s ease-in-out;
 				transition: 1.5s ease-in-out;
 			}
 			.svg-cross-4 {
@@ -140,6 +202,8 @@
 				height: 5%;
 				top: 74%;
 				right: 22.5%;
+				-webkit-transition: 700ms ease-in-out;
+				-o-transition: 700ms ease-in-out;
 				transition: 700ms ease-in-out;
 			}
 			.svg-cross-5 {
@@ -147,6 +211,8 @@
 				height: 4%;
 				top: 65%;
 				left: 45%;
+				-webkit-transition: 1.5s ease-in-out;
+				-o-transition: 1.5s ease-in-out;
 				transition: 1.5s ease-in-out;
 			}
 			.svg-cross-6 {
@@ -154,6 +220,8 @@
 				height: 3%;
 				top: 70%;
 				left: 47%;
+				-webkit-transition: 700ms ease-in-out;
+				-o-transition: 700ms ease-in-out;
 				transition: 700ms ease-in-out;
 			}
 			.svg-cross-7 {
@@ -161,6 +229,8 @@
 				height: 3%;
 				top: 68%;
 				left: 10%;
+				-webkit-transition: 1s ease-in-out;
+				-o-transition: 1s ease-in-out;
 				transition: 1s ease-in-out;
 			}
 			.svg-cross-8 {
@@ -168,6 +238,8 @@
 				height: 3%;
 				top: 50%;
 				right: 10%;
+				-webkit-transition: 500ms ease-in-out;
+				-o-transition: 500ms ease-in-out;
 				transition: 500ms ease-in-out;
 			}
 
